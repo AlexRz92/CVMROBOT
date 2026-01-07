@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0;
+    filter: drop-shadow(0 0 0px rgba(34, 211, 238, 0));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.8));
+  }
+  100% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.4));
+  }
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 4s ease-in-out infinite;
+}
